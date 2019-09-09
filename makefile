@@ -10,6 +10,10 @@ AR=ar ruv
 RANLIB=ranlib
 DIFF=diff
 RM=rm -f
+BUILDDIR= ./build
+HOSTFILE=etc/linux.c
+TARGET=x86/linux
+
 TSTDIR=$(BUILDDIR)/$(TARGET)/tst
 CUSTOM=custom.mk
 include $(CUSTOM)
