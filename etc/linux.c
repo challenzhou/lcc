@@ -5,12 +5,13 @@
 static char rcsid[] = "$Id$";
 
 #ifndef LCCDIR
-#define LCCDIR "/usr/local/lib/lcc/"
+//#define LCCDIR "/usr/local/lib/lcc/"
+#define LCCDIR "/work/codes/lcc/build/"
 #endif
 
 char *suffixes[] = { ".c", ".i", ".s", ".o", ".out", 0 };
 char inputs[256] = "";
-char *cpp[] = { LCCDIR "gcc/cpp",
+char *cpp[] = { LCCDIR "/cpp",
 	"-U__GNUC__", "-D_POSIX_SOURCE", "-D__STDC__=1", "-D__STRICT_ANSI__",
 	"-Dunix", "-Di386", "-Dlinux",
 	"-D__unix__", "-D__i386__", "-D__linux__", "-D__signed__=signed",
