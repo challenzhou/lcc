@@ -2,9 +2,9 @@
 A=.a
 O=.o
 E=
-CC=cc
-CFLAGS=-g
-LDFLAGS=-g
+CC=gcc
+CFLAGS=-pg -g
+LDFLAGS=-pg -g
 LD=$(CC)
 AR=ar ruv
 RANLIB=ranlib

@@ -1,2 +1,5 @@
 build
 *.swp
+cscope*
+gmon.out
+tags
